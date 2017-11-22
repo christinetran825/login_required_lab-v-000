@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'sessions#new'
-  get 'secrets' => 'secrets#show', as: 'secrets'
-  post '/logout' => 'sessions#destroy'
+  get '/secrets', to: 'secrets#show'
+  get '/sessions', to: 'sessions#destroy'
 
   resource :sessions
 
