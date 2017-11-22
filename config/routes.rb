@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'sessions/new'
+  get 'secrets/show'
 
   # root 'application#hello'
   # get '/login' => 'sessions#new'
