@@ -1,4 +1,4 @@
-class SecretsController << ApplicationController
+class SecretsController < ApplicationController
 
   before_action
 
