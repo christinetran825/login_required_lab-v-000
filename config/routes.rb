@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'sessions/new'
-  get 'secrets/show'
+  get 'secrets' => 'secrets#show', as: 'secrets'
 
   resource :sessions
 
