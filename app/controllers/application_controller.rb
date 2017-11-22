@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     if !session[:name].present?
       session[:name] == nil
     else
-      sessions[:name]
+      session[:name]
     end
   end
 
