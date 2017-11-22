@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
   get 'secrets' => 'secrets#show', as: 'secrets'
+  post '/logout' => 'sessions#destroy'
 
   resource :sessions
 
